@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <title>Juan F. Erazo</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    </head>
+    <body>
+        <div class="navigator">
+            <div class="navigator__top">
+                <div class="headshotContainer">
+                    <img alt="My Face" src="me.jpg" id="headshot"></img>
+                </div>
+                <h1>Juan F. Erazo</h1>
+                <h2>Full Stack Web Developer | Educator</h2>
+            </div>
+            <div class="navigator__navs" id="navs">
+                <a href="#projects" data-value="projects">Projects</a>
+                <a href="#skills" data-value="skills">Skills</a>
+                <a href="#experience" data-value="experience">Experience</a>
+                <a href="#about" data-value="about">About Me</a>
+            </div>
+        </div>
+        <div class="content">
+            <div id="projects">
+                <h1>Projects</h1>
+                <div  class="subsection">
+                    <div>
+                        
+                        <div class="descriptionAndImage">
+                            <div class="descriptionAndImage__description">
+                                <h2>Dungeon Master Tools</h2>
+                                <p>DM Tools is a cross-platform electron application that runs as a window locally on your machine and helps you, the Dungeon Master, manage your role playing sessions by removing a lot of the encumberments that come with pen traditional pen and paper approaches.</p>
+                                <p>I play a lot of DnD and I got frustrated having to do all my combat calculations on paper. When my players went to a place I hadn't written about, I wasn't very good at generating content on the spot. This is my attempt at putting everything you need to run a DnD campaign in your laptop screen in a user friendly way. </p>
+                                <p>This app is built in React.js using Redux for state control, SCSS for styling, and runs locally on electron.</p>
+                            </div>
+                            <div class="descriptionAndImage__imageRow">
+                                <img src="https://i.imgur.com/AJ6ds6y.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        
+                        <div class="descriptionAndImage">
+                            <div class="descriptionAndImage__description">
+                                <h2>Make It Permament</h2>
+                                <p>Make it Permament is the result of a hyperfixation wtih base conversions. The site hosts two games that allows users to develop a proficiency converting different number bases (i.e. binary, octal, decimal, and hexadecimal) to each other and a morse code trainer.</p>
+                                <p>I originally built the site when I was taking 64-bit assembly in college. Manipulating hex, octal, and binary numbers was challenging for me so I wrote this tool in C++ that could help me practice. Later I wanted to make it accessible to my peers so I converted the code to javascript and bought the domain.</p>
+                                <p>This site is built with vanilla Javascript and Materialize CSS for the styling. I wanted to try something other than bootstrap.</p>
+                            </div>
+                            <div class="descriptionAndImage__imageRow">
+                                <img src="makeitpermanent.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        
+                        <div class="descriptionAndImage">
+                            <div class="descriptionAndImage__description">
+                                <h2>Mom's Basement</h2>
+                                <p>Mom's Basement is a virtual reality experience where players must race against the clock to complete goals in a virtual space using motion controls.</p>
+                                <p>I worked on this project with my friends at UCSC Hacks and it was my first time ever working virtual reality.</p>
+                                <p>We built the game in Unity 3D and I made all the 3D models in blender in a 36 hour window. I has to learn blender a few weeks before we competed because we didn't have any other modelers on the team.</p>
+                            </div>
+                            <div class="descriptionAndImage__imageRow">
+                                <img src="momsbasement.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="experience">
+                <h1>Experience</h1>
+                <div class="subsection">
+                    <hr>
+                    <h3>Comp. Sci Tutor, Programming Instructor, and VEX Robotics Coach</h2>
+                    <p>I’ve been teaching college, high school, and middle school students computer programming and robotics for
+                            two years. I’ve taught private one on one lessons mainly in C++, but I’ve also taught JavaScript, Python, and
+                            their libraries and frameworks. Most of my private sessions are with college students taking their C.S.
+                            courses in C++.</p>
+                    <p>I also teach an introductory programming class with MIT Scratch and Python and I coach a middle school
+                            VEX Robotics team.</p>
+                    <hr>
+                    <h3>Unity Developer - <span>Ocean Games</span></h2>
+                        <p>I coordinated with a team of developers, artists, and game designers to build a prototype for a fast-paced
+                                competitive multiplayer battle arena. We used the Unity 3D engine and C# but also did some research with
+                                Unreal Engine 4 with C++ when deciding which we should use after the prototype.</p>
+                        <p>I maintained the version control for the team and reviewed changes before merging them to master.</p>
+                        <p>I wrote the entire player movement physics and half of the character abilities for several characters. I
+                                maintained an object-oriented methodology throughout the project.</p>
+                    <hr>
+                </div>
+            </div>
+
+            <div id="skills">
+                <h1>Skills</h1>
+                <div  class="subsection">
+                     <h2>Languages</h2>
+                     <div class="skill-pool" id="skill-languages"></div>
+                     <h2>Front End</h2>
+                     <div class="skill-pool" id="skill-frontend"></div>
+                     <h2>Back End</h2>
+                     <div class="skill-pool" id="skill-backend"></div>
+                     <h2>Database</h2>
+                     <div class="skill-pool" id="skill-database"></div>
+                     <h2>Cloud</h2>
+                     <div class="skill-pool" id="skill-cloud"></div>
+                     <h2>Version Control</h2>
+                     <div class="skill-pool" id="skill-vc"></div>
+                     <h2>Production Applications</h2>
+                     <div class="skill-pool" id="skill-production"></div>
+                     <h2>Hardware</h2>
+                     <div class="skill-pool" id="skill-hardware"></div>
+                     <h2>Linux/UNIX</h2>
+                     <div class="skill-pool" id="skill-UNIX"></div>
+                 </div>
+            </div>
+
+            <div id="about">
+                <h1>About</h1>
+                <div class="subsection">
+
+                </div>
+            </div>
+            
+        </div>
+        <script type="text/javascript" src="pool.js"></script>
+        <script type="text/javascript" src="topic-switcher.js"></script>
+    </body>
+</html>
