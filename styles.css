@@ -99,9 +99,11 @@ p{
 
     body{
         grid-template-columns: 1fr;
+        min-height: 100%;
     }
     .content {
         padding-left: 1rem !important;
+        min-height: 100%;
     }
     .descriptionAndImage {
         grid-template-columns: 1fr;
