@@ -1,27 +1,17 @@
-// const projects = document.querySelector('#projects');
-// const skills = document.querySelector('#skills');
-// const experience = document.querySelector('#experience');
-// const about = document.querySelector('#about');
+let lastActive = 'projects';
 
-// //Put all views into a list
-// const nodeList = [projects, skills, experience, about];
-// nodeList.forEach(node => {node.style.display = 'none'})
-// projects.style.display = 'block';
+const activate = node => {
+    if(!node.dataset.value){return;}
+    document.querySelector(`[data-value=${lastActive}]`).classList.remove('active');
+    node.classList.add('active');
+    lastActive = node.dataset.value;
+}
 
-// const switchView = event => {
-//     const newView = event.target.dataset.value;
-//     console.log(newView);
-//     nodeList.forEach(node => {
-//         if(node.id === newView){
-//             node.style.display = 'block';
-//         }else{ 
-//             node.style.display = 'none';
-//         }
-//     });
-// }
+const switchView = event => {
+    const nav = event.target;
+    activate(nav);
+}
 
-// //Get navs
-// const navs = document.getElementById('navs');
-// navs.addEventListener('click', switchView);
-
-// window.addEventListener('resize')
+//Get navs
+const navs = document.getElementById('navs');
+navs.addEventListener('click', switchView);

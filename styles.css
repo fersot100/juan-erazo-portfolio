@@ -37,6 +37,9 @@ p{
     font-size: 2rem;
     padding: 1rem;
 }
+.active {
+    background: rgba(12, 79, 151, 0.789);
+}
 .headshotContainer {
     display: flex;
     justify-content: center;
@@ -94,6 +97,14 @@ p{
     margin-bottom: 1rem; 
     font-weight: bold;
 }
+/* Half Screen 1920 x 1080----------------*/
+@media only screen and (max-width : 1000px) {
+    .descriptionAndImage {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+        justify-items: center;
+    }
+}
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 420px) {
 
@@ -105,13 +116,31 @@ p{
         padding-left: 1rem !important;
         min-height: 100%;
     }
-    .descriptionAndImage {
-        grid-template-columns: 1fr;
-        grid-gap: 0;
-        justify-items: center;
-    }
+    
     .descriptionAndImage__imageRow img {
         width: 16rem;
         height: 11rem;
+    }
+}
+/* Smartphones IPhone 5----------- */
+@media only screen and (max-width : 320px) {
+    .navigator__top{
+        height: 20%;
+    }
+    .navigator__top h1{
+        font-size: 1.4rem;
+    }
+    .navigator__top h2 {
+        font-size: 1.2rem;
+    }
+    .headshotContainer{
+        padding-top: 1rem;
+    }
+    #headshot{
+        width: 10rem;
+        height: 10rem;
+    }
+    .navigator__navs a{
+        font-size: 1.4rem;
     }
 }
