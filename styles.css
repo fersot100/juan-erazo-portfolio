@@ -37,6 +37,9 @@ p{
     font-size: 2rem;
     padding: 1rem;
 }
+.navigator__navs a:hover {
+    background: rgba(12, 79, 151, 0.789);
+}
 .active {
     background: rgba(12, 79, 151, 0.789);
 }
@@ -76,14 +79,14 @@ p{
 .descriptionAndImage__imageRow{
     display: flex;
     justify-content: space-between;
-    vertical-align: middle;
 }
 .descriptionAndImage__imageRow img {
-    width: 22rem;
-    height: 19rem;
+    width: auto;
+    height: 300px;
     margin-top: 2rem;
-    border-radius: 10%;
-    border: 2px solid #096DBA;
+    border: 2px solid rgba(9, 109, 186, 0.418);
+    vertical-align: middle;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.377);
 }
 .skill-pool{
     display: flex;
