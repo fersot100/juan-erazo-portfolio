@@ -18,7 +18,7 @@ const appendSkills = (list, nodeToAppend) => {
 }
 
 appendSkills('C++, Javascript, Python, C#, C, 64-bit Assembly', languagePool)
-appendSkills('HTML, CSS, React.JS, jQuery, Bootstrap, Materialze.css, SASS/SCSS, FlexBox, CSS-Grid', frontEndPool)
+appendSkills('HTML, CSS, React.JS, jQuery, Bootstrap, Materialze.css, SASS/SCSS, FlexBox, CSS-Grid, HTML5 Canavas', frontEndPool)
 appendSkills('Node.js, Express.js, PHP', backEndPool);
 appendSkills('mySQL, SQLite, MongoDB', databasePool);
 appendSkills('AWS S3/EC2, Heroku, Firebase', cloudPool);
