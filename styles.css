@@ -116,7 +116,7 @@ p{
         min-height: 100%;
     }
     .content {
-        padding-left: 1rem !important;
+        padding-left: 1rem;
         min-height: 100%;
     }
     
